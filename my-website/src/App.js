@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
+import {Container}  from './components/container/container.jsx'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>mY wEBSITE</h1>
-    </div>
-  );
+
+class App extends React.Component {
+  state = {  }
+  render() { 
+    return ( 
+      <Container/>
+     );
+  }
 }
 
 export default App;
