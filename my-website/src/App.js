@@ -2,8 +2,7 @@ import React from "react";
 import "./App.css";
 import { NavbarTop } from "./components/NavbarTop/NavbarTop.jsx";
 import { PageContainer } from "./components/PageContainer/PageContainer.jsx";
-import { BG } from "./components/bg/bg";
-// import { BG } from "./components/bg/bg.jsx";
+import { BG } from "./components/bg/bg.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -30,7 +29,7 @@ class App extends React.Component {
         <BG />
         <NavbarTop />
         <div className="m-5">
-          <div className="PageContainer bg-dark text-light p-3 rounded">
+          <div className=" bg-dark PageContainer text-light p-3 rounded">
             <PageContainer
               onpage={this.state.onpage}
               title={this.state.title}

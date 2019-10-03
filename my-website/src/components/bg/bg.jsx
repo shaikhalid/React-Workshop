@@ -1,6 +1,10 @@
 import React from "react";
-import "./bg.css";
+import "./bg.scss";
 
 export const BG = () => {
-  return <img className="bg" alt="bgbgbgbgbg" />;
+  return (
+    <div className="frame">
+      <img className="bg" alt="bgbgbgbgbg" />
+    </div>
+  );
 };

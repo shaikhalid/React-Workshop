@@ -36,6 +36,8 @@ class Notes extends Component {
     let { tasks } = this.state;
     tasks.push(newTask);
     this.setState({ tasks });
+
+    console.log(this.props.children);
   };
 
   render() {

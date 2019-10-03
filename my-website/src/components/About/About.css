@@ -13,6 +13,12 @@
   height: auto;
   margin: auto;
 }
+.img-fluid {
+  transition: transform 0.2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+.img-fluid:hover {
+  transform: scale(1.1);
+}
 
 .col1 {
   grid-column: 1/2;

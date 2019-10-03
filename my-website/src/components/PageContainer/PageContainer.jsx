@@ -1,5 +1,5 @@
 import React from "react";
-import "./PageContainer.css";
+import "./PageContainer.scss";
 import About from "../About/About.jsx";
 import Home from "../Home/Home.jsx";
 import Notes from "../Notes/Notes.jsx";
