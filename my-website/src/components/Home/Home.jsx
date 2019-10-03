@@ -1,11 +1,11 @@
-import React from 'react';
-import './Home.css'
+import React from "react";
+import "./Home.css";
 
-export const Home = () =>   
-    <div className="Home text-light rounded">
-        <div className="Text float-left fl">
-            <p>Shaikh Khalid</p>
-            <p>Coming Soon Web Developer</p>
-        </div>
-        
+export const Home = () => (
+  <div className="Home text-light rounded center-div">
+    <div className="Text center-div">
+      <h1>Shaikh Khalid</h1>
+      <h1>Coming Soon Web Developer</h1>
     </div>
+  </div>
+);
