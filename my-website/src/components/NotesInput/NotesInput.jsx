@@ -3,7 +3,7 @@ import { Button, ListGroup, ListGroupItem } from "react-bootstrap";
 
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 
-const NotesInput = () => {
+const NotesInput = props => {
   return (
     <div>
       <InputGroup className="m-2">
@@ -11,16 +11,16 @@ const NotesInput = () => {
         <Input
           id="inputTitle"
           placeholder="Add title"
-          onChange={() => this.props.onChange}
+          onChange={props.onChange}
         />
         <Input
           id="inputDescription"
           placeholder="Add description"
-          onChange={() => this.props.onChange}
+          onChange={props.onChange}
           style={{ marginInlineEnd: 20 + "px" }}
         />
         <Button
-          onClick={() => this.props.onAdd}
+          onClick={props.onAdd}
           style={{ marginLeft: 10 + "px", marginInlineEnd: 20 + "px" }}
         >
           Add
@@ -33,7 +33,7 @@ const NotesInput = () => {
         <Input
           id="searchField"
           placeholder="keywords"
-          onChange={() => this.props.onChange}
+          onChange={props.onChange}
           style={{ marginInlineEnd: 20 + "px" }}
         />
       </InputGroup>

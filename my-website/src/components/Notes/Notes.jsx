@@ -6,7 +6,7 @@ import NotesContainer from "../NotesContainer/NotesContainer.jsx";
 class Tasks extends Component {
   state = {
     searchField: "",
-    inputText: "",
+    inputTitle: "",
     inputDescription: "",
 
     tasks: [
@@ -24,13 +24,13 @@ class Tasks extends Component {
   handleChange = e => {
     this.setState(
       { [e.target.id]: e.target.value },
-      console.log(this.state.searchField)
+      console.log(this.state.inputTitle)
     );
   };
 
   handleAdd = e => {
     let newTask = {
-      title: this.state.inputText,
+      title: this.state.inputTitle,
       description: this.state.inputDescription
     };
     let { tasks } = this.state;
