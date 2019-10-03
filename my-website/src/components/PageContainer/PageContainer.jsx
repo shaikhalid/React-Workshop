@@ -7,27 +7,23 @@ import { Resume } from "../Resume/Resume.jsx";
 export const PageContainer = props => {
   if (props.onpage === "About") {
     return (
-      <div className="m-5">
-        <div className="PageContainer bg-dark text-light p-3 rounded special-card">
+        <div className="PageContainer bg-dark text-light m-1 rounded ">
           <About about={props.about} />
         </div>
-      </div>
     );
   } else if(props.onpage === "Resume") {
     console.log(props.resume)
     return (
-      <div className="PageContainer bg-dark text-light p-3  m-5 rounded">
+      <div className="PageContainer bg-dark text-light  m-1 rounded">
         <Resume resume={props.resume} />
       </div>
     );
   }
   else{
     return (
-      <div className="m-5">
-        <div className="PageContainer bg-dark text-light p-3 rounded">
+        <div className="PageContainer bg-dark text-light m-1 rounded">
           <Home />
         </div>
-      </div>
     );
   }
 };
