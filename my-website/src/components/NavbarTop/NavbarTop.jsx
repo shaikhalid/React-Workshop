@@ -15,9 +15,6 @@ export const NavbarTop = () => {
             Resume
           </Button>
           <Button className="mx-1" variant="dark">
-            Notes
-          </Button>
-          <Button className="mx-1" variant="dark">
             About
           </Button>
         </Nav>

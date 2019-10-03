@@ -1,20 +1,15 @@
-<<<<<<< HEAD
-.Home   {
-    
-    background-size: cover;
-    background-position: 80%;
-    
-=======
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 .Home {
+  font-family: 'open Sans', monospace;
   background-size: cover;
-  background-position: 80%;
+  background-image:url("https://storage.googleapis.com/spec-host-backup/mio-develop%2Fassets%2F1MS2ZcIBr0qASdaum9-_5nDbX6RghHcuL%2Fweb-documents-quickstart-2x1-large.png");
   display: flex;
   align-items: center;
+  padding: 15%;
+  font-size: 30px;
 }
 .center-div {
   margin: auto;
-  margin-top: 10%;
-  max-width: 700px;
   text-align: center;
->>>>>>> master
 }
