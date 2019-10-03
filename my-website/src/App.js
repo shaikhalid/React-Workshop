@@ -37,11 +37,7 @@ class App extends React.Component {
         <BG />
         <NavbarTop />
 
-        <PageContainer
-          className="m-5"
-          onpage={this.state.onpage}
-          about={this.state.about}
-        />
+        <PageContainer onpage={this.state.onpage} about={this.state.about} />
       </div>
     );
   }

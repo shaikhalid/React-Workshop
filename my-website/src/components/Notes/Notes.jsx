@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
 import "./Notes.css";
+import NotesInput from "../NotesInput/NotesInput.jsx";
+import NotesContainer from "../NotesContainer/NotesContainer.jsx";
 
 class Tasks extends Component {
   state = {
-    searchfield: "",
+    searchField: "",
+    inputText: "",
+    inputDescription: "",
 
     tasks: [
       {
@@ -19,57 +22,36 @@ class Tasks extends Component {
   };
 
   handleChange = e => {
-    this.setState({ searchfield: e.target.value });
+    this.setState(
+      { [e.target.id]: e.target.value },
+      console.log(this.state.searchField)
+    );
   };
 
   handleAdd = e => {
-    const inp = e.target.value;
-    let newTask = { title: "task3", description: inp };
+    let newTask = {
+      title: this.state.inputText,
+      description: this.state.inputDescription
+    };
     let { tasks } = this.state;
     tasks.push(newTask);
-    const newTasks = tasks;
-    this.setState({ tasks: newTasks });
+    this.setState({ tasks });
   };
 
   render() {
-    const { tasks, searchfield } = this.state;
+    const { tasks, searchField } = this.state;
     const filteredTasks = tasks.filter(task =>
-      task.description.toLowerCase().includes(searchfield.toLowerCase())
+      task.description.toLowerCase().includes(searchField.toLowerCase())
     );
 
     return (
-      <React.Fragment>
-        <p>
-          <input
-            className="notesInput"
-            type="search"
-            placeholder="Search"
-            onChange={this.handleChange}
-          ></input>
-          <input className="notesInput" type="text" placeholder="Title"></input>
-          <input
-            className="notesInput"
-            type="text"
-            placeholder="Description"
-          ></input>
-
-          <Button className="addButton" onClick={this.handleAdd}>
-            +
-          </Button>
-        </p>
-        <div className="container">
-          {filteredTasks.map(task => (
-            <div className="row">
-              <b className="col1">
-                <div>{task.title}</div>
-              </b>
-              <div className="col1">
-                <div>{task.description}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </React.Fragment>
+      <div>
+        <NotesInput
+          onChange={this.handleChange}
+          onAdd={this.handleAdd}
+        ></NotesInput>
+        <NotesContainer key="notes" tasks={filteredTasks}></NotesContainer>
+      </div>
     );
   }
 }

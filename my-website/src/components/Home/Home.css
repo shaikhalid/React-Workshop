@@ -5,6 +5,7 @@
   align-items: center;
 }
 .center-div {
+  background-color: transparent;
   margin: auto;
   margin-top: 10%;
   max-width: 700px;
