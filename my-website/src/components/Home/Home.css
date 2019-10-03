@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 .Home   {
     
     background-size: cover;
     background-position: 80%;
     
+=======
+.Home {
+  background-size: cover;
+  background-position: 80%;
+  display: flex;
+  align-items: center;
 }
-
-
+.center-div {
+  margin: auto;
+  margin-top: 10%;
+  max-width: 700px;
+  text-align: center;
+>>>>>>> master
+}
