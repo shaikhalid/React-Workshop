@@ -10,15 +10,8 @@ class App extends React.Component {
     super();
     this.state = {
       onpage: "Home",
-      about: {
-        title: "I am a WebDeveloper @noWhere",
-        content:
-          "Id mollit dolor ex laboris veniam est excepteur. Aliqua anim cillum ea proident excepteur officia deserunt. Excepteur adipisicing commodo laborum elit sit eiusmod anim. Aliqua esse fugiat incididunt non laboris est elit quis ullamco.",
-        name: "Shaikh Khalid",
-        age: "20",
-        phone: "9136723049",
-        email: "shaikhalidwork@gmail.com"
-      }
+      title: "Shaikh Khalid",
+      subtitle: "Coming sooon web developer"
     };
   }
 
@@ -36,8 +29,15 @@ class App extends React.Component {
       <div>
         <BG />
         <NavbarTop />
-
-        <PageContainer onpage={this.state.onpage} about={this.state.about} />
+        <div className="m-5">
+          <div className="PageContainer bg-dark text-light p-3 rounded">
+            <PageContainer
+              onpage={this.state.onpage}
+              title={this.state.title}
+              subtitle={this.state.subtitle}
+            />
+          </div>
+        </div>
       </div>
     );
   }

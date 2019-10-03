@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Button, ListGroup, ListGroupItem } from "react-bootstrap";
+import React from "react";
+import { Button } from "react-bootstrap";
 
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
+import { InputGroup, InputGroupAddon, Input } from "reactstrap";
 
 const NotesInput = props => {
   return (

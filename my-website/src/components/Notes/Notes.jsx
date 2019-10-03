@@ -3,7 +3,7 @@ import "./Notes.css";
 import NotesInput from "../NotesInput/NotesInput.jsx";
 import NotesContainer from "../NotesContainer/NotesContainer.jsx";
 
-class Tasks extends Component {
+class Notes extends Component {
   state = {
     searchField: "",
     inputTitle: "",
@@ -56,4 +56,4 @@ class Tasks extends Component {
   }
 }
 
-export default Tasks;
+export default Notes;

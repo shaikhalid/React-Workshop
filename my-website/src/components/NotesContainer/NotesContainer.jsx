@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Button, ListGroup, ListGroupItem } from "reactstrap";
+import React from "react";
+import { ListGroup, ListGroupItem } from "reactstrap";
 
 const NotesContainer = props => {
   return (
